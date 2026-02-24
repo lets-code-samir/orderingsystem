@@ -11,13 +11,14 @@ setTimeout(() => {
 
 }, 2000);
 
+
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     const name = document.getElementById("name").value;
     const mobile = document.getElementById("mobileNumber");
-    const weight = document.getElementById('weight')
+    const weight = document.getElementById('weight').value
     const item=document.getElementById('item').value
-    const place=document.getElementById('location').value.trim()
+    const place=document.getElementById('location').value
     
     // we are putting a conditioning to verify if the number of that person is correct
     if ( !/^[0-9]{10}$/.test(mobile.value.trim())){
@@ -26,7 +27,7 @@ form.addEventListener("submit",(e)=>{
         mobile.focus()
         return
        }
-    const message = `Hi, My name is ${name} from ${place}. I want ${weight} of ${item}. My number is ${mobile}`;
+    const message = `Hi, My name is ${name} from ${place}. I want ${weight} of ${item}. My number is ${mobile.value}`;
     const encodedMessage = encodeURIComponent(message);
 
     const phoneNumber = "919634041253"; // replace with real number
@@ -36,4 +37,5 @@ form.addEventListener("submit",(e)=>{
     window.open(whatsappURL, "_blank");
     
 })
+
 
