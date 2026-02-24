@@ -8,22 +8,27 @@
 </head>
 <body>
       <div id="welcome">
+        <img src="chicken.png" alt="loading..">
         <h1>welcome to My Chicken</h1>
+        
       </div>
-  
+      
       <div id="mainContent" style="display:none;">
+        
         <h2>Place your order</h2>
-  
         <form>
            <input type="text" placeholder="your name" id="name" required>
            <input type="text" placeholder="enter mobileNumber" id="mobileNumber" required>
-           <input type="text" placeholder="location" id="location" required>
+          
+
+           <input type="text" id="location" placeholder="Your Address">
   
            <select id="item" required>
              <option value="">Select Item</option>
              <option value="Chicken">Chicken (Full)</option>
-             <option value="Liver">Liver</option>
-             <option value="Leg Piece">Leg Piece</option>
+             <option value="Chicken curry size ">Chicken (curry size)</option>
+             <option value="Liver">Liver(kaleja)</option>
+             <option value="Leg Piece">Leg Pieces</option>
              <option value="Wings">Wings</option>
            </select>
   
@@ -33,13 +38,29 @@
              <option value="500 gram">500 gram</option>
              <option value="750 gram">750 gram</option>
              <option value="1 kilo">1 kilo</option>
+             <option value="2 kilo">2 kilo</option>
+             <option value="3 kilo">3 kilo</option>
+             <option value="4 kilo">4 kilo</option>
+             <option value="5 kilo">5 kilo</option>
+             <option value="6 kilo">6 kilo</option>
+             <option value="7 kilo">7 kilo</option>
            </select>
   
-          <button type="submit">orderNow</button>
+           <button type="submit">orderNow</button>
         </form>
+        <div id="description">
+           <p>
+             My chicken is the most trusted and realiable brand in jaigoan.It's 
+             main focus is on product quality,hygenie and early delivery   
+           </p>
+           <p id="phoneNumber">📞 Ph :9083133309</p>
+        </div>
+
       </div>
 
-    <script src="script.js"></script>
+
+    
 </body>
+<script src="script.js"></script>
 </html>
 
