@@ -43,8 +43,11 @@ form.addEventListener("submit",(e)=>{
     confirmation.classList.add("active")
 
     setTimeout(()=>{
-        window.location.href=whatsappURL
+        confirmation.classList.remove("active");
         form.reset()
+        window.location.href=whatsappURL
+        
+
     },1000)
     
 })
