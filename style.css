@@ -16,11 +16,12 @@ body {
 
 /* Welcome Screen*/
 #welcome {
-    height: 100vh;
+    min-height: 100dvh;  /* 👈 mobile perfect height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     background: linear-gradient(135deg, #d62828, #f77f00);
     color: rgb(250, 250, 250);
     text-align: center;
@@ -29,7 +30,7 @@ body {
 
 #welcome img {
     width: 140px;              
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     animation: float 2s ease-in-out infinite alternate;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); 
 }
